@@ -22,7 +22,7 @@ public class PnunuMain {
         Polyval polyval;
         try {
             //Create polynomial fitting object which is 4 times 4 shows polynomial fitting
-            polyfit = new Polyfit(x, y, 4);
+            polyfit = new Polyfit(x, y, 1);
             polyval = new Polyval(x, polyfit);
             for (int i = 0; i <= polyval.getYout().length - 1; i++) {
                 BigDecimal bd = new BigDecimal(polyval.getYout()[i]).setScale(5, BigDecimal.ROUND_HALF_UP);
